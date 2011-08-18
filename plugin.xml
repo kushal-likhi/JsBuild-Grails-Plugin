@@ -1,0 +1,18 @@
+<plugin name='jsbuild' version='0.9.5' grailsVersion='1.3.5 &gt; *'>
+  <author>Kushal Likhi</author>
+  <authorEmail>kushal.likhi@gmail.com</authorEmail>
+  <title>Javascript Building Framework</title>
+  <description>\
+Implements www.devunited.org JsBuild utility in grails with added features
+</description>
+  <documentation>http://www.devunited.org/jsbuild</documentation>
+  <resources>
+    <resource>BuildConfig</resource>
+    <resource>Config</resource>
+    <resource>DataSource</resource>
+    <resource>UrlMappings</resource>
+    <resource>org.devunited.jsbuild.grails.plugin.JsBuildTagLib</resource>
+  </resources>
+  <dependencies />
+  <behavior />
+</plugin>
