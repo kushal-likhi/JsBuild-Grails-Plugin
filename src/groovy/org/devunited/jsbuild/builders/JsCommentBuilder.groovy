@@ -4,7 +4,6 @@ import org.devunited.jsbuild.enricher.CommandLineUserInterfaceReady
 import org.devunited.jsbuild.BuildInfo
 import org.devunited.jsbuild.messages.MessageTemplate
 import org.devunited.jsbuild.templates.TemplateBuilder
-import org.devunited.jsbuild.JsBuild
 
 /**
  * Created by IntelliJ IDEA.
@@ -22,8 +21,11 @@ class JsCommentBuilder implements CommandLineUserInterfaceReady {
     public static String COMMENT_START = "/*" + '\n'
     public static String COMMENT_END = " */" + '\n\n'
 
-    public JsCommentBuilder(File file) {
+    def mainContext
+
+    public JsCommentBuilder(File file, mainContext) {
         directoryToBeScanned = file
+        this.mainContext = mainContext
     }
 
     public String getComments() {
@@ -37,7 +39,7 @@ class JsCommentBuilder implements CommandLineUserInterfaceReady {
 
         directoryToBeScanned.eachFileRecurse {file ->
             if (file.getName().endsWith(".comment")) {
-                addComment "PACKAGE: " + JsPackageBuilder.determinePackage(file.parentFile)
+                addComment "PACKAGE: " + JsPackageBuilder.determinePackage(file.parentFile, mainContext)
                 file.eachLine {line ->
                     addComment line
                 }
@@ -47,8 +49,8 @@ class JsCommentBuilder implements CommandLineUserInterfaceReady {
             filesScanned++
         }
 
-        JsBuild.filesScanned = filesScanned
-        JsBuild.commentsFound = filesFound
+        mainContext.filesScanned = filesScanned
+        mainContext.commentsFound = filesFound
 
         (COMMENT_START + comments + COMMENT_END)
     }

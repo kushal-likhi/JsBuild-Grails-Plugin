@@ -2,10 +2,10 @@ package org.devunited.jsbuild
 
 import org.devunited.jsbuild.messages.ConsolePosters
 
-import org.devunited.jsbuild.messages.MessageTemplate
 import org.devunited.jsbuild.enricher.CommandLineUserInterfaceReady
 import org.devunited.jsbuild.builders.JsCommentBuilder
 import org.devunited.jsbuild.builders.JsPackageBuilder
+import org.devunited.jsbuild.builders.JsAnnotationEngine
 import org.devunited.utils.DevUnitedBeanBagUser
 
 /**
@@ -17,54 +17,79 @@ import org.devunited.utils.DevUnitedBeanBagUser
 
 class JsBuild implements CommandLineUserInterfaceReady, DevUnitedBeanBagUser {
 
-    public static String baseDir = ""
+    public String baseDir = ""
 
-    public static String targetFilePath = ""
+    public String baseDirBackup = ""
 
-    public static boolean isFileCommentsEnabled = true
+    public String homeDir = ""
 
-    public static Integer filesScanned = 0
+    public String targetFilePath = ""
 
-    public static Integer commentsFound = 0
+    public String minFilePath = "N/A"
 
-    public static Integer totalProperties = 0
+    public boolean isFileCommentsEnabled = true
 
-    public static Integer totalPackages = 0
+    public boolean modeRemoteBuild = false
 
-    public static Integer totalLoc = 0
+    public boolean buildConsole = false
 
-    public static Integer totalBlankLines = 0
+    public String basePackage = ""
 
-    public static Integer totalLinesInBuild = 0
+    public Integer filesScanned = 0
 
+    public Integer commentsFound = 0
 
+    public Integer totalProperties = 0
 
-    public JsBuild() {
-        baseDir = ""
-        targetFilePath = ""
-        isFileCommentsEnabled = true
-        filesScanned = 0
-        commentsFound = 0
-        totalProperties = 0
-        totalPackages = 0
-        totalLoc = 0
-        totalBlankLines = 0
-        totalLinesInBuild = 0
-    }
+    public Integer totalPackages = 0
+
+    public Integer totalConstructors = 0
+
+    public Integer totalLoc = 0
+
+    public Integer totalBlankLines = 0
+
+    public Integer totalLinesInBuild = 0
+
+    public Map exportedProperties = [:]
+
+    public Map aliasedProperties = [:]
+
+    public Map overrideProperties = [:]
+
+    public Map eventRegistry = [:]
+
+    public Map intervalRegistry = [:]
+
+    public List errors = []
+
+    public List<String> constructors = []
+
 
 
     public void build(String packageName) {
 
         Long startTime = System.currentTimeMillis()
 
+
+
         isFileCommentsEnabled = readFromBeanBag("commentsEnabled") as Boolean
+        buildConsole = readFromBeanBag("buildConsole") as Boolean
+
+
 
         File sourceDir = new File(readFromBeanBag("sourceDir") + File.separatorChar + packageName)
+        File home = new File(readFromBeanBag("sourceDir") + File.separatorChar + ".jsbuild")
         File targetDir = new File(readFromBeanBag("targetDir") as String)
-
         File targetFile = new File(targetDir.getCanonicalPath() + File.separatorChar + readFromBeanBag(packageName))
 
+
+
         baseDir = sourceDir.getCanonicalPath()
+        baseDirBackup = sourceDir.getCanonicalPath()
+        homeDir = home.getCanonicalPath()
+
+
 
         try {
             targetFile.createNewFile()
@@ -74,17 +99,50 @@ class JsBuild implements CommandLineUserInterfaceReady, DevUnitedBeanBagUser {
             exitWithError "Error Creating Target File"
         }
 
+
+
         String targetFileContents = ""
+        targetFileContents += new JsCommentBuilder(sourceDir, this).comments
 
-        targetFileContents += new JsCommentBuilder(sourceDir).comments
 
-        targetFileContents += new JsPackageBuilder([recursionLevel: 1, recursionSibling: 1]).build(sourceDir)
 
+        basePackage = JsPackageBuilder.determinePackage(sourceDir, this)
+        targetFileContents += new JsPackageBuilder([recursionLevel: 1, recursionSibling: 1], this).build(sourceDir)
+        JsAnnotationEngine annotationEngine = new JsAnnotationEngine(targetFileContents)
+        annotationEngine.processExports(exportedProperties)
+        targetFileContents = annotationEngine.contents
         targetFile.write targetFileContents
-
         targetFileContents.eachLine {totalLinesInBuild++}
 
-        showToUser ConsolePosters.summaryPoster()
+
+
+        boolean minify = readFromBeanBag("buildConsole") as Boolean
+        if (minify) {
+            minFilePath = targetFilePath.replaceAll(/.js$/, "") + ".min.js"
+            String[] arg = [targetFilePath, "-o", minFilePath]
+            try {
+                com.yahoo.platform.yui.compressor.Bootstrap.main(arg)
+            } catch (Exception e) {
+                minFilePath = "ERROR OCCOURED WHILE BUILDING"
+            }
+        }
+
+
+
+        showToUser ConsolePosters.summaryPoster(this)
+
+
+
+        if (!errors.isEmpty()) {
+            showToUser "NOTE: There Were Few Errors/Warnings During Build"
+            showToUser "-------------------------------------------------"
+            errors.each {
+                showToUser it
+            }
+            putLineBreakWithHeight 2
+        }
+
+
 
         showToUser "[JsBuild] Time To Build: ${System.currentTimeMillis() - startTime}ms"
 

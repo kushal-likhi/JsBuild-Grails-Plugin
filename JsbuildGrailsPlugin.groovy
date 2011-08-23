@@ -1,13 +1,12 @@
 import org.devunited.jsbuild.grails.plugin.JsBuildWorkingDir
 import org.devunited.jsbuild.grails.plugin.JsBuildTargetDir
-import org.devunited.utils.BeanBag
 import org.devunited.utils.DevUnitedBeanBagUser
 import org.codehaus.groovy.grails.commons.ConfigurationHolder
 
 class JsbuildGrailsPlugin implements DevUnitedBeanBagUser {
 
     // the plugin version
-    def version = "0.9.5"
+    def version = "1.0.1.6"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.3.5 > *"
     // the other plugins this plugin depends on
@@ -48,11 +47,19 @@ Implements www.devunited.org JsBuild utility in grails with added features
         storeInBeanBag "targetDir", new JsBuildTargetDir(applicationContext).toString()
         storeInBeanBag "rebuild", false
         storeInBeanBag "commentsEnabled", false
+        storeInBeanBag "buildConsole", false
+        storeInBeanBag "minify", false
         if (ConfigurationHolder.config.jsbuild.rebuild) {
             storeInBeanBag "rebuild", true
         }
         if (ConfigurationHolder.config.jsbuild.commentsEnabled) {
             storeInBeanBag "commentsEnabled", true
+        }
+        if (ConfigurationHolder.config.jsbuild.console) {
+            storeInBeanBag "buildConsole", true
+        }
+        if (ConfigurationHolder.config.jsbuild.minify) {
+            storeInBeanBag "minify", true
         }
     }
 
@@ -76,6 +83,18 @@ Implements www.devunited.org JsBuild utility in grails with added features
             storeInBeanBag "commentsEnabled", true
         } else {
             storeInBeanBag "commentsEnabled", false
+        }
+
+        if (ConfigurationHolder.config.jsbuild.minify) {
+            storeInBeanBag "minify", true
+        } else {
+            storeInBeanBag "minify", false
+        }
+
+        if (ConfigurationHolder.config.jsbuild.console) {
+            storeInBeanBag "buildConsole", true
+        } else {
+            storeInBeanBag "buildConsole", false
         }
     }
 }

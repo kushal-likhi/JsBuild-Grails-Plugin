@@ -1,7 +1,6 @@
 package org.devunited.jsbuild.enricher
 
 import org.devunited.jsbuild.templates.TemplateBuilder
-import org.devunited.jsbuild.messages.ConsolePosters
 
 /**
  * Created by IntelliJ IDEA.

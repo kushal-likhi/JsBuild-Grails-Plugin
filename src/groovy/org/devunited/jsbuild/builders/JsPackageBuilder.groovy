@@ -1,8 +1,6 @@
 package org.devunited.jsbuild.builders
 
-import org.devunited.jsbuild.JsBuild
 import org.devunited.jsbuild.enricher.CommandLineUserInterfaceReady
-import org.devunited.jsbuild.messages.MessageTemplate
 
 /**
  * Created by IntelliJ IDEA.
@@ -14,6 +12,8 @@ class JsPackageBuilder implements CommandLineUserInterfaceReady {
 
     File basePackage
 
+    def mainContext
+
     Integer recursionLevel = 1
     Integer recursionSibling = 1
 
@@ -22,15 +22,18 @@ class JsPackageBuilder implements CommandLineUserInterfaceReady {
         this.recursionSibling = recursionSibling
     }
 
-    JsPackageBuilder(Map options) {
+    JsPackageBuilder(Map options, mainContext) {
         this.recursionLevel = options.recursionLevel
         this.recursionSibling = options.recursionSibling
+        this.mainContext = mainContext
     }
 
     public String build(File base) {
         basePackage = base
 
-        JsBuild.totalPackages++
+        mainContext.totalPackages++
+
+
 
         String contentBuffer
         if (recursionLevel == 1) {
@@ -44,14 +47,19 @@ class JsPackageBuilder implements CommandLineUserInterfaceReady {
                 [
                         recursionLevel: recursionLevel,
                         recursionSibling: recursionSibling
-                ]
+                ],
+                mainContext
         ).build(basePackage) + (recursionLevel == 1 ? ";" : ""))
     }
 
-    public static String determinePackage(File packageLocation) {
-        String basePath = new File((JsBuild.baseDir + File.separatorChar + "..")).getCanonicalPath() + File.separatorChar
+    public static String determinePackage(File packageLocation, mainContext) {
+        String basePath = new File((mainContext.baseDir + File.separatorChar + "..")).getCanonicalPath() + File.separatorChar
         String packageDir = packageLocation.getCanonicalPath()
         String packageName = packageDir - basePath
-        return packageName.trim().replace('/', '.').replace(File.separator, '.')
+        packageName = packageName.trim().replace('/', '.').replace(File.separator, '.')
+        if (mainContext.modeRemoteBuild) {
+            packageName = (mainContext.basePackage + "." + packageName)
+        }
+        return packageName
     }
 }

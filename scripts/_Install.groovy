@@ -9,4 +9,17 @@
 //    ant.mkdir(dir:"${basedir}/grails-app/jobs")
 //
 
-ant.mkdir(dir:"${basedir}/grails-app/jsbuild")
+ant.mkdir(dir: "${basedir}/grails-app/jsbuild")
+ant.mkdir(dir: "${basedir}/grails-app/jsbuild/.jsbuild")
+
+String to = "${basedir}/grails-app/jsbuild/.jsbuild"
+
+String from = "${pluginBasedir}/grails-app/jsbuild/.jsbuild"
+
+println "[JSBUILD PLUGIN] Copying Component Files"
+
+ant.copy(toDir: to, filtering: true, overwrite: true) {
+    fileset(dir: from)
+}
+
+println "[JSBUILD PLUGIN] Copied Files To: ${to}"
