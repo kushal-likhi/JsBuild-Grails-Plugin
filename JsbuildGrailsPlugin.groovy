@@ -6,7 +6,7 @@ import org.codehaus.groovy.grails.commons.ConfigurationHolder
 class JsbuildGrailsPlugin implements DevUnitedBeanBagUser {
 
     // the plugin version
-    def version = "1.0.1.6"
+    def version = "1.1.1.7"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.3.5 > *"
     // the other plugins this plugin depends on

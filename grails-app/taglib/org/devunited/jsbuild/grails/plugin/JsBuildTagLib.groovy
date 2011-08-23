@@ -27,6 +27,10 @@ class JsBuildTagLib implements DevUnitedBeanBagUser {
 
         String file = "jsbuild/${fileName}"
 
+        if (readFromBeanBag("minify")) {
+            file = file.replaceAll(/.js$/, "") + ".min.js"
+        }
+
         out << "<script type=\"text/javascript\" src=\"${g.resource(dir: 'js', file: file)}\"></script>"
 
     }

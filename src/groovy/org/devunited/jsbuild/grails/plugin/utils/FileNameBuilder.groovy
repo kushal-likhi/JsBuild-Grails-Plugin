@@ -18,6 +18,4 @@ class FileNameBuilder {
         namePrefix += ".${packageName}.js"
         namePrefix
     }
-
-
 }

@@ -15,65 +15,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="129e1f6b-6d78-43a5-8b44-6696bb55f520" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/yuicompressor-2.4.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/component.registry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/console/Constructor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/console/a.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/console/closeEditor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/console/eventHandlers/consoleshowHide.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/console/eventHandlers/executeCommand.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/console/ex.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/console/getFunc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/console/launchEditor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/console/log.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/console/stack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/console/ui/buildUI.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/console/ui/getSize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/console/updateFunc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/console/watch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/Constructor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/contains.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/endsWith.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/getSize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/isBlank.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/isCreditCard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/isDate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/isDateDE.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/isDateISO.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/isDigits.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/isEmail.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/isNumber.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/isNumberDE.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/isURL.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/parseDate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/readLines.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/repeate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/replaceAll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/reverse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/startsWith.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/toArray.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/toBoolean.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/toFloat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/jsbuild/.jsbuild/string_utils/enrichers/toInteger.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/builders/JsAnnotationEngine.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/builders/JsAnnotationProcessor.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/builders/MasterConstructorBuilder.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/component/ComponentRegistryAccess.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/component/ComponentRegistryData.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsbuildGrailsPlugin.groovy" afterPath="$PROJECT_DIR$/JsbuildGrailsPlugin.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/_Install.groovy" afterPath="$PROJECT_DIR$/scripts/_Install.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/BuildInfo.groovy" afterPath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/BuildInfo.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/JsBuild.groovy" afterPath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/JsBuild.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/builders/JsCommentBuilder.groovy" afterPath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/builders/JsCommentBuilder.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/builders/JsFileParser.groovy" afterPath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/builders/JsFileParser.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/builders/JsNamespaceBuilder.groovy" afterPath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/builders/JsNamespaceBuilder.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/builders/JsPackageBuilder.groovy" afterPath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/builders/JsPackageBuilder.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/enricher/CommandLineUserInterfaceReady.groovy" afterPath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/enricher/CommandLineUserInterfaceReady.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/messages/ConsolePosters.groovy" afterPath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/messages/ConsolePosters.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/messages/MessageTemplate.groovy" afterPath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/messages/MessageTemplate.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/taglib/org/devunited/jsbuild/grails/plugin/JsBuildTagLib.groovy" afterPath="$PROJECT_DIR$/grails-app/taglib/org/devunited/jsbuild/grails/plugin/JsBuildTagLib.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.xml" afterPath="$PROJECT_DIR$/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/grails/plugin/utils/FileNameBuilder.groovy" afterPath="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/grails/plugin/utils/FileNameBuilder.groovy" />
     </list>
     <ignored path="jsbuild.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -148,10 +94,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/messages/ConsolePosters.groovy" />
         <option value="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/grails/plugin/JsBuildGrailsPluginPackageBuilder.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/taglib/org/devunited/jsbuild/grails/plugin/JsBuildTagLib.groovy" />
         <option value="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/builders/JsCommentBuilder.groovy" />
         <option value="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/builders/JsNamespaceBuilder.groovy" />
-        <option value="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/grails/plugin/utils/FileNameBuilder.groovy" />
         <option value="$PROJECT_DIR$/scripts/_Events.groovy" />
         <option value="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/JsBuild.groovy" />
         <option value="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/builders/JsAnnotationEngine.groovy" />
@@ -159,9 +103,11 @@
         <option value="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/builders/JsPackageBuilder.groovy" />
         <option value="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/component/ComponentRegistryAccess.groovy" />
         <option value="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/enricher/CommandLineUserInterfaceReady.groovy" />
-        <option value="$PROJECT_DIR$/JsbuildGrailsPlugin.groovy" />
         <option value="$PROJECT_DIR$/scripts/_Install.groovy" />
         <option value="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/builders/JsFileParser.groovy" />
+        <option value="$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/grails/plugin/utils/FileNameBuilder.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/taglib/org/devunited/jsbuild/grails/plugin/JsBuildTagLib.groovy" />
+        <option value="$PROJECT_DIR$/JsbuildGrailsPlugin.groovy" />
       </list>
     </option>
   </component>
@@ -197,7 +143,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -226,99 +171,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsbuild" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsbuild" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="groovy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="devunited" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsbuild" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsbuild" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="groovy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="devunited" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsbuild" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsbuild" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsbuild" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="groovy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="devunited" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsbuild" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="builders" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsbuild" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsbuild" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
+              <option name="myItemId" value="grails-app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -335,17 +188,26 @@
               <option name="myItemId" value="grails-app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taglib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Favorites" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="OverrideImplement.combined" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
@@ -396,6 +258,24 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" />
       <module name="" />
@@ -429,24 +309,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" />
       <option name="MAIN_CLASS_NAME" />
@@ -464,14 +326,6 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="FtpUpload" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -498,6 +352,14 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -547,7 +409,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="720" extended-state="0" />
+    <frame x="-1" y="24" width="1368" height="721" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -565,7 +427,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32952815" sideWeight="0.67114097" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32902735" sideWeight="0.67114097" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -606,11 +468,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/builders/MasterConstructorBuilder.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="75" selection-start="335" selection-end="335" vertical-scroll-proportion="-6.6" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/component/ComponentRegistryAccess.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="41" selection-start="1475" selection-end="1475" vertical-scroll-proportion="-25.8" />
@@ -641,16 +498,6 @@
         <state line="15" column="34" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/BuildInfo.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="33" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/taglib/org/devunited/jsbuild/grails/plugin/JsBuildTagLib.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="203" selection-end="203" vertical-scroll-proportion="0.18485916" />
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/yuicompressor-2.4.6.jar!/org/mozilla/javascript/ScriptOrFnNode.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="13" selection-start="160" selection-end="160" vertical-scroll-proportion="0.110497236" />
@@ -671,19 +518,40 @@
         <state line="25" column="0" selection-start="811" selection-end="811" vertical-scroll-proportion="0.66021127" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/builders/JsFileParser.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="78" selection-start="2239" selection-end="2239" vertical-scroll-proportion="-0.056338027" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/BuildInfo.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="31" selection-start="488" selection-end="488" vertical-scroll-proportion="0.52816904" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/grails/plugin/utils/FileNameBuilder.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="528" selection-end="528" vertical-scroll-proportion="0.5536028">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/taglib/org/devunited/jsbuild/grails/plugin/JsBuildTagLib.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.9226714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/JsBuild.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="0" selection-start="4020" selection-end="4020" vertical-scroll-proportion="0.8378378" />
+        <state line="118" column="40" selection-start="3157" selection-end="3157" vertical-scroll-proportion="0.40949035">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JsbuildGrailsPlugin.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="59" selection-start="2963" selection-end="2963" vertical-scroll-proportion="0.26056337" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/groovy/org/devunited/jsbuild/builders/JsFileParser.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="78" selection-start="2239" selection-end="2239" vertical-scroll-proportion="-0.056338027">
+        <state line="15" column="37" selection-start="644" selection-end="644" vertical-scroll-proportion="0.31634447">
           <folding />
         </state>
       </provider>
