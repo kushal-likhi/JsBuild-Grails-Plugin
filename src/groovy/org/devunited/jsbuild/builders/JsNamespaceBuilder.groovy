@@ -3,6 +3,7 @@ package org.devunited.jsbuild.builders
 import org.devunited.jsbuild.enricher.CommandLineUserInterfaceReady
 import org.devunited.jsbuild.component.ComponentRegistryAccess
 import org.devunited.jsbuild.component.ComponentRegistryData
+import org.devunited.utils.DevUnitedBeanBagUser
 
 /**
  * Created by IntelliJ IDEA.
@@ -10,7 +11,7 @@ import org.devunited.jsbuild.component.ComponentRegistryData
  * Date: 7/30/11
  * Time: 8:37 PM
  */
-class JsNamespaceBuilder implements CommandLineUserInterfaceReady {
+class JsNamespaceBuilder implements CommandLineUserInterfaceReady, DevUnitedBeanBagUser {
 
     File namespace
 
@@ -173,7 +174,7 @@ class JsNamespaceBuilder implements CommandLineUserInterfaceReady {
             if (file.getName() == "Includes.txt") {
                 new JsFileParser(file, mainContext).property.eachLine {line ->
                     if (line.trim() != "") {
-                        File source = new File(line.trim())
+                        File source = new File(readFromBeanBag("sourceDir") + File.separatorChar + line.trim())
                         if (source.exists()) {
                             mainContext.baseDir = source.getCanonicalPath()
                             mainContext.modeRemoteBuild = true
@@ -195,6 +196,7 @@ class JsNamespaceBuilder implements CommandLineUserInterfaceReady {
                 }
             }
         }
+        contentBuffer = contentBuffer.replace("jsbuildRuntimeBasePackage", JsPackageBuilder.determinePackage(namespace, mainContext))
         return contentBuffer
     }
 

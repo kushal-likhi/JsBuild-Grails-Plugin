@@ -61,6 +61,8 @@ class JsBuild implements CommandLineUserInterfaceReady, DevUnitedBeanBagUser {
 
     public Map intervalRegistry = [:]
 
+    public Map injectProperties = [:]
+
     public List errors = []
 
     public List<String> constructors = []
@@ -116,12 +118,12 @@ class JsBuild implements CommandLineUserInterfaceReady, DevUnitedBeanBagUser {
 
 
 
-        boolean minify = readFromBeanBag("buildConsole") as Boolean
+        boolean minify = readFromBeanBag("minify") as Boolean
         if (minify) {
             minFilePath = targetFilePath.replaceAll(/.js$/, "") + ".min.js"
             String[] arg = [targetFilePath, "-o", minFilePath]
             try {
-                com.yahoo.platform.yui.compressor.Bootstrap.main(arg)
+                com.yahoo.platform.yui.compressor.YUICompressor.main(arg)
             } catch (Exception e) {
                 minFilePath = "ERROR OCCOURED WHILE BUILDING"
             }
