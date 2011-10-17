@@ -6,7 +6,7 @@ package org.devunited.jsbuild
  * Date: 7/28/11
  * Time: 11:05 PM
  */
-public static abstract interface BuildInfo {
+public abstract interface BuildInfo {
 
     public static final String version = "1.8"
 

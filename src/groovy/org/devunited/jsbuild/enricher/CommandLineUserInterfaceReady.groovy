@@ -8,7 +8,7 @@ import org.devunited.jsbuild.templates.TemplateBuilder
  * Date: 7/29/11
  * Time: 8:31 PM
  */
-public static interface CommandLineUserInterfaceReady {
+public interface CommandLineUserInterfaceReady {
 
     public static showToUser = {delegate ->
         println delegate

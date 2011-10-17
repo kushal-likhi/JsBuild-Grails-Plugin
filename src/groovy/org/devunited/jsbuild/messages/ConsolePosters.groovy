@@ -10,7 +10,7 @@ import org.devunited.jsbuild.JsBuild
  * Time: 11:03 PM
  */
 
-public static interface ConsolePosters{
+public interface ConsolePosters{
 
     public static String introPoster = """
 *******************WELCOME*********************

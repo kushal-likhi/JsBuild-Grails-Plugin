@@ -6,7 +6,7 @@ package org.devunited.jsbuild.messages
  * Date: 7/29/11
  * Time: 8:07 PM
  */
-public static abstract interface MessageTemplate {
+public abstract interface MessageTemplate {
     public static final TARGET_DIR = "Target Directory Is Set To:  ###targetDir###"
     public static final TARGET_FILE = "Target File Is Set To:  ###targetFile###"
     public static final TARGET_FILE_CREATED = "Created Target File:  ###targetFile###"

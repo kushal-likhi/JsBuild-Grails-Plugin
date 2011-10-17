@@ -9,7 +9,7 @@ import java.util.concurrent.ConcurrentHashMap
  * Time: 5:33 PM
  * To change this template use File | Settings | File Templates.
  */
-static class BeanBag {
+class BeanBag {
 
     private static ConcurrentHashMap<String, Object> beanHolder = new ConcurrentHashMap<String, Object>()
 
